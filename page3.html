@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page3</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=EB+Garamond&family=Kanit&family=Ubuntu&family=Ubuntu+Mono:ital,wght@1,700&display=swap');
+
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Kanit', sans-serif; 
+        }
+        body {
+            /* background: #fff; */
+            background-color: #f9f5f6;
+      }
+      nav {
+        /* background-color: #bbddddd7; */
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+      }
+      /* .logo{
+    border: 2px solid red;
+} */
+      .right {
+        font-size: 0.9rem;
+        display: flex;
+        /* justify-content: ; */
+        align-items: center;
+        gap: 3em;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .container {
+        height: calc(100vh - 4rem);
+        width: 100%;
+        /* background-color: crimson; */
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 6em;
+        padding: 2em 0;
+        cursor: pointer;
+        background-color: #f8e8ee;
+        background-color: #f9f5f6;
+      }
+
+      .box {
+        transition: all 0.4s ease;
+        height: 12rem;
+        width: 13rem;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        /* padding: 1.6em 1.3em; */
+        /* box-shadow: 0px 0px 30px 1px #dadada; */
+
+        background: #1c92d2; 
+        background: -webkit-linear-gradient(
+          to right,
+          #cdf0ea,
+          #ecc5fb
+        ); 
+        background: linear-gradient(
+          to right,
+          #cdf0ea,
+          #ecc5fb
+        ); 
+
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          
+          /* border: 0.2px solid black; */
+        }
+        
+        .box:hover{
+            transform: scale(1.2);
+            box-shadow: rgba(0, 0, 0, 0.12) 1px 2px 4px,
+              rgba(0, 0, 0, 0.24) 1px 2px 4px;
+      }
+
+
+
+
+
+      .up {
+        height: 20%;
+        width: 100%;
+        /* background-color: aqua; */
+        padding: 0.2em 1em;
+      }
+      .up h2 {
+        font-size: 2.2rem;
+        z-index: 2;
+      }
+      
+      .down {
+        padding: 0.2em 1em;
+        height: 80%;
+        /* background-color: blue; */
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        z-index: 0;
+        /* padding: 1em 0em;margin-top: 1em; */
+      }
+
+      .down img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        /* padding: 1em 0em; */
+      }
+
+
+      .quote_container{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        /* background-color: royalblue; */
+        background: #176b87;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .quote_box{
+            width: 40%;
+            height: 15rem;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+            flex-direction: column;
+            padding: 2em 2em;
+        }
+
+        h2{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 600;
+            opacity: 70%;
+
+        }
+        .new{
+            /* background-color: aqua; */
+            width: 80%;
+            height: 3rem;
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            border-top:2px solid #176b87;
+            
+        }
+
+        .new span{
+            margin-top: 2em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 900;
+            /* border: 2px solid rgb(30, 53, 122); */
+            background-color: #176b87;
+            color: white;
+            border-radius: 20px;
+            padding: 0.5em 2em;
+            cursor: pointer;
+
+        }
+
+    </style>
+  </head>
+
+
+  <body>
+
+
+    <!-- <div class="quote_container">
+      <div class="quote_box">
+        <h2>Quote of the day</h2>
+        <p>"If you dont ask the answer is always no."</p>
+
+        <div class="new">
+            <span onclick="change()">New Quote</span>
+        </div>
+
+    </div>
+    </div> -->
+
+
+    <nav>
+      <!-- <h3>dont look here guys its temprory space for navbar</h3> -->
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <div class="right">
+        <h4>Home</h4>
+        <h4>About</h4>
+        <h4>Features</h4>
+        <h4>Contact</h4>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="box" id="AI">
+        <div class="up">
+          <h2>AI-buddy</h2>
+        </div>
+        <div class="down">
+          <img src="./img/ai2.png" alt="AI img" />
+          
+        </div>
+      </div>
+
+
+
+      <div class="box" id="Meditation">
+        <div class="up">
+          <h2>Meditation</h2>
+        </div>
+        <div class="down">
+          <img src="./img/medi2.png" alt="Meditation img" />
+        </div>
+      </div>
+
+
+
+      <div class="box" id="music">
+        <div class="up">
+          <h2>Music</h2>
+        </div>
+        <div class="down">
+          <img src="./img/music2.png" alt="Music img" />
+        </div>
+      </div>
+
+
+      <div class="box" id="books">
+        <div class="up">
+          <h2>Books</h2>
+        </div>
+        <div class="down">
+          <img src="./img/book.png" alt="books img" />
+        </div>
+      </div>
+
+
+
+      <div class="box" id="journal">
+        <div class="up">
+          <h2>Journal</h2>
+        </div>
+        <div class="down">
+          <img src="./img/journal.png" alt="Journal img" />
+        </div>
+      </div>
+
+      <div class="box" id="movie">
+        <div class="up">
+          <h2>Movie</h2>
+        </div>
+        <div class="down">
+          <img src="./img/movie.png" alt="AI img" />
+        </div>
+      </div>
+
+
+
+      <div class="box">
+        <div class="up">
+          <h2>AI</h2>
+        </div>
+        <div class="down">
+          <img src="" alt="AI img" />
+        </div>
+      </div>
+      <div class="box">
+        <div class="up">
+          <h2>AI</h2>
+        </div>
+        <div class="down">
+          <img src="" alt="AI img" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="anime.js"></script>

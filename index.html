@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page1">
+      <nav>
+        <!-- <h3>dont look here guys its temprory space for navbar</h3> -->
+        <div class="logo">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+          <h4>Home</h4>
+          <h4>About</h4>
+          <h4>Features</h4>
+          <h4>Contact</h4>
+        </div>
+      </nav>
+      <div class="main">
+        <h1>How are you feeling now?</h1>
+        <div class="emoji">
+          <!-- very tery  much happy -->
+
+          <a href="qoute.html">
+            <picture id="happy">
+              <source
+                srcset="
+                  https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f970/512.gif"
+                alt="🥰"
+                width="50"
+                height="50"
+              />
+            </picture>
+          </a>
+          <!-- just happy -->
+
+          <a href="qoute.html">
+            <picture id="just_happy">
+              <source
+                srcset="
+                  https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif"
+                alt="😃"
+                width="50"
+                height="50"
+              />
+            </picture>
+          </a>
+          <!-- angry -->
+
+          <a href="qoute.html">
+            <picture id="angry">
+              <source
+                srcset="
+                  https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.gif"
+                alt="😡"
+                width="50"
+                height="50"
+              />
+            </picture>
+          </a>
+          <!-- sad -->
+
+          <a href="qoute.html">
+            <picture id="sad">
+              <source
+                srcset="
+                  https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif"
+                alt="😔"
+                width="50"
+                height="50"
+              />
+            </picture>
+          </a>
+          <!-- very tery much sad -->
+
+          <a href="qoute.html">
+            <picture id="very_sad">
+              <source
+                srcset="
+                  https://fonts.gstatic.com/s/e/notoemoji/latest/1f97a/512.webp
+                "
+                type="image/webp"
+              />
+              <img
+                src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f97a/512.gif"
+                alt="🥺"
+                width="50"
+                height="50"
+              />
+            </picture>
+          </a>
+        </div>
+
+        <div class="slider-container">
+          <input type="range" min="0" max="100" id="slider" value="0" oninput="slider_value(this.value)"/>
+        </div>
+
+        <p id="mood"> </p>
+        <div class="bottom">
+          <a href="page2.html">
+            <span>Let's Start Journey</span>
+
+          </a>
+  
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>

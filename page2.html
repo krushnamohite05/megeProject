@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=EB+Garamond&family=Kanit&family=Ubuntu&family=Ubuntu+Mono:ital,wght@1,700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Kanit', sans-serif; 
+
+        }
+        body{
+            /* background: #bbc6fa; */
+            background: #176b87ab;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+      
+
+        .box{
+            width: 40%;
+            height: 15rem;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+            flex-direction: column;
+            padding: 2em 2em;
+            
+
+        }
+        h2{
+            font-size: 2rem;
+            font-weight: 900;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 600;
+            opacity: 70%;
+
+        }
+        .new{
+            /* background-color: aqua; */
+            width: 80%;
+            height: 3rem;
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            border-top:2px solid #176b87;
+            
+        }
+
+        .new span{
+            margin-top: 2em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 900;
+            /* border: 2px solid rgb(30, 53, 122); */
+            background-color: #176b87;
+            color: white;
+            border-radius: 20px;
+            padding: 0.5em 2em;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Quote of the day</h2>
+        <p>"If you dont ask the answer is always no."</p>
+
+        <div class="new">
+            <span onclick="change()">New Quote</span>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+
+    var custom=document.getElementsByClassName("new");
+    var quote=document.querySelector("p");
+
+    var quote_box=["if you dont ask the answer is always no.",
+    "The wound is the place where the light enters you.",
+    "Rise above the storm and you will find the sunshine.",
+    "Find joy in the journey.",
+    "Breathe. Believe. Receive."]
+    var i=1;
+
+    function change(){
+        console.log("gcxzhvaxzJbk");
+
+        if(i<quote_box.length){
+
+            quote.innerHTML='"'+quote_box[i]+'"';
+            i++
+        }else{
+            quote.innerHTML='"'+quote_box[0]+'"';
+            i=0;
+        }
+
+
+    }
+
+    const url = 'https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10';
+const options = {
+	// method: 'POST',
+	headers: {
+		'X-RapidAPI-Key': 'c7cadb1130msh6f210c248f998cdp18b9e4jsn444d96efeb4b',
+		'X-RapidAPI-Host': 'andruxnet-random-famous-quotes.p.rapidapi.com'
+	}
+};
+
+async function test(){
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+
+}
+test();
+
+
+
+
+
+
+
+
+</script>
+
